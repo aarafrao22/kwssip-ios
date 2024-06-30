@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		186786F82C32703D005022A3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186786F72C32703D005022A3 /* HomeView.swift */; };
+		18B3D59B2C31B51B008F9BF8 /* kwssipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B3D59A2C31B51B008F9BF8 /* kwssipApp.swift */; };
+		18B3D59D2C31B51B008F9BF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B3D59C2C31B51B008F9BF8 /* ContentView.swift */; };
+		18B3D59F2C31B51F008F9BF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B3D59E2C31B51F008F9BF8 /* Assets.xcassets */; };
+		18B3D5A22C31B51F008F9BF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B3D5A12C31B51F008F9BF8 /* Preview Assets.xcassets */; };
+		18B3D5AC2C31B520008F9BF8 /* kwssipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B3D5AB2C31B520008F9BF8 /* kwssipTests.swift */; };
+		18B3D5B62C31B520008F9BF8 /* kwssipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B3D5B52C31B520008F9BF8 /* kwssipUITests.swift */; };
+		18B3D5B82C31B520008F9BF8 /* kwssipUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B3D5B72C31B520008F9BF8 /* kwssipUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18B3D5A82C31B520008F9BF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18B3D58F2C31B51B008F9BF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18B3D5962C31B51B008F9BF8;
+			remoteInfo = kwssip;
+		};
+		18B3D5B22C31B520008F9BF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18B3D58F2C31B51B008F9BF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18B3D5962C31B51B008F9BF8;
+			remoteInfo = kwssip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		186786F72C32703D005022A3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		18B3D5972C31B51B008F9BF8 /* kwssip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kwssip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B3D59A2C31B51B008F9BF8 /* kwssipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kwssipApp.swift; sourceTree = "<group>"; };
+		18B3D59C2C31B51B008F9BF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		18B3D59E2C31B51F008F9BF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18B3D5A12C31B51F008F9BF8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18B3D5A72C31B520008F9BF8 /* kwssipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kwssipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B3D5AB2C31B520008F9BF8 /* kwssipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kwssipTests.swift; sourceTree = "<group>"; };
+		18B3D5B12C31B520008F9BF8 /* kwssipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kwssipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B3D5B52C31B520008F9BF8 /* kwssipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kwssipUITests.swift; sourceTree = "<group>"; };
+		18B3D5B72C31B520008F9BF8 /* kwssipUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kwssipUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18B3D5942C31B51B008F9BF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B3D5A42C31B520008F9BF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B3D5AE2C31B520008F9BF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18B3D58E2C31B51B008F9BF8 = {
+			isa = PBXGroup;
+			children = (
+				18B3D5992C31B51B008F9BF8 /* kwssip */,
+				18B3D5AA2C31B520008F9BF8 /* kwssipTests */,
+				18B3D5B42C31B520008F9BF8 /* kwssipUITests */,
+				18B3D5982C31B51B008F9BF8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18B3D5982C31B51B008F9BF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18B3D5972C31B51B008F9BF8 /* kwssip.app */,
+				18B3D5A72C31B520008F9BF8 /* kwssipTests.xctest */,
+				18B3D5B12C31B520008F9BF8 /* kwssipUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18B3D5992C31B51B008F9BF8 /* kwssip */ = {
+			isa = PBXGroup;
+			children = (
+				18B3D59A2C31B51B008F9BF8 /* kwssipApp.swift */,
+				18B3D59C2C31B51B008F9BF8 /* ContentView.swift */,
+				18B3D59E2C31B51F008F9BF8 /* Assets.xcassets */,
+				18B3D5A02C31B51F008F9BF8 /* Preview Content */,
+				186786F72C32703D005022A3 /* HomeView.swift */,
+			);
+			path = kwssip;
+			sourceTree = "<group>";
+		};
+		18B3D5A02C31B51F008F9BF8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				18B3D5A12C31B51F008F9BF8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18B3D5AA2C31B520008F9BF8 /* kwssipTests */ = {
+			isa = PBXGroup;
+			children = (
+				18B3D5AB2C31B520008F9BF8 /* kwssipTests.swift */,
+			);
+			path = kwssipTests;
+			sourceTree = "<group>";
+		};
+		18B3D5B42C31B520008F9BF8 /* kwssipUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18B3D5B52C31B520008F9BF8 /* kwssipUITests.swift */,
+				18B3D5B72C31B520008F9BF8 /* kwssipUITestsLaunchTests.swift */,
+			);
+			path = kwssipUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18B3D5962C31B51B008F9BF8 /* kwssip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B3D5BB2C31B520008F9BF8 /* Build configuration list for PBXNativeTarget "kwssip" */;
+			buildPhases = (
+				18B3D5932C31B51B008F9BF8 /* Sources */,
+				18B3D5942C31B51B008F9BF8 /* Frameworks */,
+				18B3D5952C31B51B008F9BF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kwssip;
+			productName = kwssip;
+			productReference = 18B3D5972C31B51B008F9BF8 /* kwssip.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18B3D5A62C31B520008F9BF8 /* kwssipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B3D5BE2C31B520008F9BF8 /* Build configuration list for PBXNativeTarget "kwssipTests" */;
+			buildPhases = (
+				18B3D5A32C31B520008F9BF8 /* Sources */,
+				18B3D5A42C31B520008F9BF8 /* Frameworks */,
+				18B3D5A52C31B520008F9BF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18B3D5A92C31B520008F9BF8 /* PBXTargetDependency */,
+			);
+			name = kwssipTests;
+			productName = kwssipTests;
+			productReference = 18B3D5A72C31B520008F9BF8 /* kwssipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18B3D5B02C31B520008F9BF8 /* kwssipUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B3D5C12C31B520008F9BF8 /* Build configuration list for PBXNativeTarget "kwssipUITests" */;
+			buildPhases = (
+				18B3D5AD2C31B520008F9BF8 /* Sources */,
+				18B3D5AE2C31B520008F9BF8 /* Frameworks */,
+				18B3D5AF2C31B520008F9BF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18B3D5B32C31B520008F9BF8 /* PBXTargetDependency */,
+			);
+			name = kwssipUITests;
+			productName = kwssipUITests;
+			productReference = 18B3D5B12C31B520008F9BF8 /* kwssipUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18B3D58F2C31B51B008F9BF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					18B3D5962C31B51B008F9BF8 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					18B3D5A62C31B520008F9BF8 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 18B3D5962C31B51B008F9BF8;
+					};
+					18B3D5B02C31B520008F9BF8 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 18B3D5962C31B51B008F9BF8;
+					};
+				};
+			};
+			buildConfigurationList = 18B3D5922C31B51B008F9BF8 /* Build configuration list for PBXProject "kwssip" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18B3D58E2C31B51B008F9BF8;
+			productRefGroup = 18B3D5982C31B51B008F9BF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18B3D5962C31B51B008F9BF8 /* kwssip */,
+				18B3D5A62C31B520008F9BF8 /* kwssipTests */,
+				18B3D5B02C31B520008F9BF8 /* kwssipUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18B3D5952C31B51B008F9BF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B3D5A22C31B51F008F9BF8 /* Preview Assets.xcassets in Resources */,
+				18B3D59F2C31B51F008F9BF8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B3D5A52C31B520008F9BF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B3D5AF2C31B520008F9BF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18B3D5932C31B51B008F9BF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186786F82C32703D005022A3 /* HomeView.swift in Sources */,
+				18B3D59D2C31B51B008F9BF8 /* ContentView.swift in Sources */,
+				18B3D59B2C31B51B008F9BF8 /* kwssipApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B3D5A32C31B520008F9BF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B3D5AC2C31B520008F9BF8 /* kwssipTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B3D5AD2C31B520008F9BF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B3D5B62C31B520008F9BF8 /* kwssipUITests.swift in Sources */,
+				18B3D5B82C31B520008F9BF8 /* kwssipUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18B3D5A92C31B520008F9BF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18B3D5962C31B51B008F9BF8 /* kwssip */;
+			targetProxy = 18B3D5A82C31B520008F9BF8 /* PBXContainerItemProxy */;
+		};
+		18B3D5B32C31B520008F9BF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18B3D5962C31B51B008F9BF8 /* kwssip */;
+			targetProxy = 18B3D5B22C31B520008F9BF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		18B3D5B92C31B520008F9BF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18B3D5BA2C31B520008F9BF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18B3D5BC2C31B520008F9BF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"kwssip/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itecknologi.kwssip.kwssip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18B3D5BD2C31B520008F9BF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"kwssip/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itecknologi.kwssip.kwssip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18B3D5BF2C31B520008F9BF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itecknologi.kwssip.kwssipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kwssip.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/kwssip";
+			};
+			name = Debug;
+		};
+		18B3D5C02C31B520008F9BF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itecknologi.kwssip.kwssipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kwssip.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/kwssip";
+			};
+			name = Release;
+		};
+		18B3D5C22C31B520008F9BF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itecknologi.kwssip.kwssipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kwssip;
+			};
+			name = Debug;
+		};
+		18B3D5C32C31B520008F9BF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itecknologi.kwssip.kwssipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kwssip;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18B3D5922C31B51B008F9BF8 /* Build configuration list for PBXProject "kwssip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B3D5B92C31B520008F9BF8 /* Debug */,
+				18B3D5BA2C31B520008F9BF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B3D5BB2C31B520008F9BF8 /* Build configuration list for PBXNativeTarget "kwssip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B3D5BC2C31B520008F9BF8 /* Debug */,
+				18B3D5BD2C31B520008F9BF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B3D5BE2C31B520008F9BF8 /* Build configuration list for PBXNativeTarget "kwssipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B3D5BF2C31B520008F9BF8 /* Debug */,
+				18B3D5C02C31B520008F9BF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B3D5C12C31B520008F9BF8 /* Build configuration list for PBXNativeTarget "kwssipUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B3D5C22C31B520008F9BF8 /* Debug */,
+				18B3D5C32C31B520008F9BF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18B3D58F2C31B51B008F9BF8 /* Project object */;
+}
