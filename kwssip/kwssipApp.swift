@@ -9,13 +9,25 @@ import SwiftUI
 
 @main
 struct kwssipApp: App {
+    @State private var showContentView = false
+    
     var body: some Scene {
         WindowGroup {
-            ContentView().onAppear(){
-                DispatchQueue.main.asyncAfter(deadline: .now()+2){
-                    
+            ZStack {
+                if showContentView {
+                    ContentView()
+                } else {
+                    SplashView()
+                        .opacity(1)
+                        .onAppear {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                                withAnimation {
+                                    showContentView = true
+                                }
+                            }
+                        }
                 }
-            }.overlay(SplashView().opacity(1))
+            }
         }
     }
 }

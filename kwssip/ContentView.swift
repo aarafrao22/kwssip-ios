@@ -57,7 +57,7 @@ struct ContentView: View {
                 .navigationDestination(isPresented: $isLoggedIn) {
                     HomeView()
                 }
-            }.background(Color(hex:"#d9d9d9"))
+            }.background(Color(hex:"#ffffff"))
 
             
             
