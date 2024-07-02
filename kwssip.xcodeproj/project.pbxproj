@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		180279E32C33D0EE009EBC32 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180279E22C33D0EE009EBC32 /* SplashView.swift */; };
 		180279E52C33E1AC009EBC32 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180279E42C33E1AC009EBC32 /* ImagePicker.swift */; };
+		180279E92C33F700009EBC32 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180279E82C33F700009EBC32 /* BottomSheetView.swift */; };
 		186786F82C32703D005022A3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186786F72C32703D005022A3 /* HomeView.swift */; };
 		18B3D59B2C31B51B008F9BF8 /* kwssipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B3D59A2C31B51B008F9BF8 /* kwssipApp.swift */; };
 		18B3D59D2C31B51B008F9BF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B3D59C2C31B51B008F9BF8 /* ContentView.swift */; };
@@ -39,6 +40,8 @@
 /* Begin PBXFileReference section */
 		180279E22C33D0EE009EBC32 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		180279E42C33E1AC009EBC32 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		180279E82C33F700009EBC32 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		180279EC2C346CDC009EBC32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		186786F72C32703D005022A3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		18B3D5972C31B51B008F9BF8 /* kwssip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kwssip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B3D59A2C31B51B008F9BF8 /* kwssipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kwssipApp.swift; sourceTree = "<group>"; };
@@ -100,6 +103,7 @@
 		18B3D5992C31B51B008F9BF8 /* kwssip */ = {
 			isa = PBXGroup;
 			children = (
+				180279EC2C346CDC009EBC32 /* Info.plist */,
 				18B3D59A2C31B51B008F9BF8 /* kwssipApp.swift */,
 				18B3D59C2C31B51B008F9BF8 /* ContentView.swift */,
 				18B3D59E2C31B51F008F9BF8 /* Assets.xcassets */,
@@ -107,6 +111,7 @@
 				186786F72C32703D005022A3 /* HomeView.swift */,
 				180279E22C33D0EE009EBC32 /* SplashView.swift */,
 				180279E42C33E1AC009EBC32 /* ImagePicker.swift */,
+				180279E82C33F700009EBC32 /* BottomSheetView.swift */,
 			);
 			path = kwssip;
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 				180279E52C33E1AC009EBC32 /* ImagePicker.swift in Sources */,
 				18B3D59D2C31B51B008F9BF8 /* ContentView.swift in Sources */,
 				18B3D59B2C31B51B008F9BF8 /* kwssipApp.swift in Sources */,
+				180279E92C33F700009EBC32 /* BottomSheetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +443,7 @@
 				DEVELOPMENT_TEAM = 243JKCTLNR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = kwssip/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -467,6 +474,7 @@
 				DEVELOPMENT_TEAM = 243JKCTLNR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = kwssip/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

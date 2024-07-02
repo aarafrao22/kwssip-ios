@@ -33,8 +33,6 @@ struct SplashView: View {
                         .foregroundColor(Color(hex: "#ffffff"))
                         .multilineTextAlignment(.center)
                     
-                    
-                    // Leave this VStack empty or add other content as needed
 
                 }
                 .padding(.top,200) // Optional: Add some padding at the bottom

@@ -35,11 +35,18 @@ struct ImagePicker: UIViewControllerRepresentable {
         return Coordinator(parent: self)
     }
     
+//    func makeUIViewController(context: Context) -> UIImagePickerController {
+//        let picker = UIImagePickerController()
+//        picker.delegate = context.coordinator
+//        picker.sourceType = .camera
+//        return picker
+//    }
+    
     func makeUIViewController(context: Context) -> UIImagePickerController {
-        let picker = UIImagePickerController()
-        picker.delegate = context.coordinator
-        return picker
-    }
+         let picker = UIImagePickerController()
+         picker.delegate = context.coordinator
+         return picker
+     }
     
     func updateUIViewController(_ uiViewController: UIImagePickerController, context: Context) {}
 }

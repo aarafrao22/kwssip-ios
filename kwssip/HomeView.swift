@@ -9,101 +9,158 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var isSheetPresented = false
-    @State private var selectedImage: UIImage?
-    @State private var isImagePickerPresented: Bool = false
+    
+    @State private var imageIndex :Int = 0
+    
+    @State private var image1: UIImage?
+    @State private var image2: UIImage?
+    @State private var image3: UIImage?
+    @State private var image4: UIImage?
+    @State private var image5: UIImage?
+    
+    @State private var isImagePickerPresented1 = false
+    @State private var isImagePickerPresented2 = false
+    @State private var isImagePickerPresented3 = false
+    @State private var isImagePickerPresented4 = false
+    @State private var isImagePickerPresented5 = false
     
     var body: some View {
         
         
         VStack{
             Spacer()
-
+            
             Text("Welcome,")
                 .foregroundColor(Color(hex: "#21637D")).bold()
             
-            Text("Ahmed").font(.title)             .foregroundColor(Color(hex: "#3EB3E0")).bold()
-
+            Text("Ahmed").font(.title)
+                .foregroundColor(Color(hex: "#3EB3E0")).bold()
+            
             Spacer()
-            VStack{
-                HStack{
-                    ImageCardView(selectedImage:selectedImage)
-                    ImageCardView(selectedImage:selectedImage)
+            VStack(spacing:12){
+                HStack(spacing:12){
+                    ImageCardView(selectedImage:image1).onTapGesture {
+                        isImagePickerPresented1 = true
+                        imageIndex=imageIndex+1
+                    }
+                    ImageCardView(selectedImage:image2).onTapGesture {
+                        isImagePickerPresented2 = true
+                        imageIndex=imageIndex+1
+                    }
                 }
-                HStack{
-                    ImageCardView(selectedImage:selectedImage)
-                    ImageCardView(selectedImage:selectedImage)
-                    ImageCardView(selectedImage:selectedImage)
+                HStack(spacing:12){
+                    ImageCardView(selectedImage:image3).onTapGesture {
+                        isImagePickerPresented3 = true
+                        imageIndex=imageIndex+1
+                    }
+                    ImageCardView(selectedImage:image4).onTapGesture {
+                        isImagePickerPresented4 = true
+                        imageIndex=imageIndex+1
+
+                        
+                    }
+                    ImageCardView(selectedImage:image5).onTapGesture {
+                        isImagePickerPresented5 = true
+                        imageIndex=imageIndex+1
+
+                    }
                 }
             }.padding(28)
             
-//            Spacer()
-            Button(action: {
-                        // Action to perform when the button is pressed
+            Spacer()
+            HStack{
+                switch imageIndex{
+                    case 1:
+                        CardViewInd(index:"1",isTrue:true)
+                        CardViewInd(index:"2",isTrue:false)
+                        CardViewInd(index:"3",isTrue:false)
+                        CardViewInd(index:"4",isTrue:false)
+                        CardViewInd(index:"5",isTrue:false)
+                    case 2:
+                        CardViewInd(index:"1",isTrue:true)
+                        CardViewInd(index:"2",isTrue:true)
+                        CardViewInd(index:"3",isTrue:false)
+                        CardViewInd(index:"4",isTrue:false)
+                        CardViewInd(index:"5",isTrue:false)
+                        
+                    case 3:
+                        CardViewInd(index:"1",isTrue:true)
+                        CardViewInd(index:"2",isTrue:true)
+                        CardViewInd(index:"3",isTrue:true)
+                        CardViewInd(index:"4",isTrue:false)
+                        CardViewInd(index:"5",isTrue:false)
+                        
+                    case 4:
+                        CardViewInd(index:"1",isTrue:true)
+                        CardViewInd(index:"2",isTrue:true)
+                        CardViewInd(index:"3",isTrue:true)
+                        CardViewInd(index:"4",isTrue:true)
+                        CardViewInd(index:"5",isTrue:false)
+                    case 5:
+                        CardViewInd(index:"1",isTrue:true)
+                        CardViewInd(index:"2",isTrue:true)
+                        CardViewInd(index:"3",isTrue:true)
+                        CardViewInd(index:"4",isTrue:true)
+                        CardViewInd(index:"5",isTrue:true)
+                        
+                    default:
+                        CardViewInd(index:"1",isTrue:false)
+                        CardViewInd(index:"2",isTrue:false)
+                        CardViewInd(index:"3",isTrue:false)
+                        CardViewInd(index:"4",isTrue:false)
+                        CardViewInd(index:"5",isTrue:false)
+                    
+                }
                 
-                isImagePickerPresented=true
-                        //TODO
-                        clickPictures()
-                    }) {
-                        Text("Take Pictures of Work Site")
+                
+            }
+            
+            Spacer()
+            VStack {
+                Button(action: {
+                    isSheetPresented.toggle()
+                }) {
+                    
+                    if (imageIndex==5){
+                        
+                        Text("Upload Images")
+                            .foregroundColor(.white)
                             .padding()
                             .background(Color(hex:"#007B9A"))
                             .foregroundColor(.white)
                             .cornerRadius(30)
                     }
-            Spacer()
-            HStack{
-                CardViewInd(index:"1")
-                CardViewInd(index:"2")
-                CardViewInd(index:"3")
-                CardViewInd(index:"4")
-                CardViewInd(index:"5")
-
-                
+                    
+                }
             }
+            .sheet(isPresented: $isSheetPresented) {
+                BottomSheetView()
+                    .presentationDetents([.medium, .large])
+            }
+            .padding()
             
             Spacer()
-
             
             
-            VStack {
-                        Button(action: {
-                            isSheetPresented.toggle()
-                        }) {
-                            Text("Upload Images")
-                                .foregroundColor(.white)
-                                .padding()
-                                .background(Color(hex:"#007B9A"))
-                                .foregroundColor(.white)
-                                .cornerRadius(30)
-                        }
-                    }
-                    .sheet(isPresented: $isSheetPresented) {
-                        BottomSheetView()
-                            .presentationDetents([.medium, .large])
-                    }
-                    .padding()
-            
-            Spacer()
-
-
-        }.background(
-            Image("kw")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .clipped().opacity(0.1)
-            
-        ).sheet(isPresented: $isImagePickerPresented) {
-            ImagePicker(selectedImage: $selectedImage, isPresented: $isImagePickerPresented)
+        } .sheet(isPresented: $isImagePickerPresented1) {
+            ImagePicker(selectedImage: $image1, isPresented: $isImagePickerPresented1)
+        }
+        .sheet(isPresented: $isImagePickerPresented2) {
+            ImagePicker(selectedImage: $image2, isPresented: $isImagePickerPresented2)
+        }
+        .sheet(isPresented: $isImagePickerPresented3) {
+            ImagePicker(selectedImage: $image3, isPresented: $isImagePickerPresented3)
+        }
+        .sheet(isPresented: $isImagePickerPresented4) {
+            ImagePicker(selectedImage: $image4, isPresented: $isImagePickerPresented4)
+        }
+        .sheet(isPresented: $isImagePickerPresented5) {
+            ImagePicker(selectedImage: $image5, isPresented: $isImagePickerPresented5)
         }
         
         
     }
     
-    func clickPictures(){
-        isImagePickerPresented = true
-        print("isImagePickerPresented \(isImagePickerPresented)")
-
-    }
 }
 
 extension Color {
@@ -122,7 +179,7 @@ extension Color {
         default:
             (a, r, g, b) = (255, 0, 0, 0)
         }
-
+        
         self.init(
             .sRGB,
             red: Double(r) / 255,
@@ -137,12 +194,26 @@ struct ImageCardView: View {
     var selectedImage: UIImage?
     
     var body: some View {
-        VStack {
-            Image(systemName: "photo")
+        VStack (){
+            if let selectedImage = selectedImage {
+                
+                Image(uiImage: selectedImage)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 100, height: 100)
+                
+            } else {
+                Image(systemName: "photo")
+                    .resizable()
+                    .padding()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 100, height: 100)
+                    .foregroundColor(.gray)
+            }
         }
-        .frame(width: 100, height: 100)
         .background(Color(white: 0.94)) // equivalent to #f0f0f0
-        .cornerRadius(10)
+        .cornerRadius(12)
+        
     }
 }
 
@@ -155,79 +226,35 @@ struct ImageCard: View {
         .frame(width: 60, height: 60)
         .clipped()
         .blendMode(.multiply)
-//        .background(Color(white: 0.94)) // equivalent to #f0f0f0
         .cornerRadius(40)
     }
 }
 
-
-struct BottomSheetView: View {
-    @State private var name: String = ""
-
-    var body: some View {
-        VStack {
-            Spacer()
-            Text("Give Ahmed a Rating!")
-                .font(.title3)
-                .padding()
-                .foregroundColor(Color(.white)).bold()
-
-//            Divider()
-            Spacer()
-            HStack{
-                ImageCard(path:"img1")
-                ImageCard(path:"img2")
-                ImageCard(path:"img3")
-                ImageCard(path:"img4")
-                ImageCard(path:"img5")
-            }
-            Spacer()
-            Text("Leave a comment*")
-                .font(.title3)
-                .padding()
-                .foregroundColor(Color(.white)).bold()
-            Spacer()
-            TextField("Enter your name", text: $name)
-                            .padding()
-                            .frame(height: 5 * 24)
-                            .foregroundColor(Color(hex: "#ffffff"))
-                            .background(Color(hex: "#ffffff"))
-                            .cornerRadius(22)
-            
-            Spacer()
-            
-            Button(action: {
-                        // Action to perform when the button pressed
-
-                        print("Button pressed")
-                
-                    }) {
-                        Text("Upload")
-                            .padding()
-                            .background(Color(hex:"#007B9A"))
-                            .foregroundColor(.white)
-                            .cornerRadius(30)
-                    }
-            Spacer()
-        }.padding(18)
-        .background(Color(hex:"#3EB3E0"))
-
-    }
-}
-
-
 struct CardViewInd: View {
     var index: String
-
+    var isTrue: Bool
+    
     var body: some View {
-        VStack {
-            Text(index)
-                .font(.headline)
-                .foregroundColor(.black)
+        
+        if isTrue{
+            VStack {
+                Text(index)
+                    .font(.headline)
+                    .foregroundColor(.white)
+            }
+            .frame(width: 40, height: 40)
+            .background(Color(hex:"#21637D")) // equivalent to #f0f0f0
+            .cornerRadius(50)
+        }else{
+            VStack {
+                Text(index)
+                    .font(.headline)
+                    .foregroundColor(.gray)
+            }
+            .frame(width: 40, height: 40)
+            .background(Color(white: 0.94)) // equivalent to #f0f0f0
+            .cornerRadius(50)
         }
-        .frame(width: 40, height: 40)
-        .background(Color(white: 0.94)) // equivalent to #f0f0f0
-        .cornerRadius(50)
     }
 }
 

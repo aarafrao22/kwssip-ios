@@ -49,7 +49,6 @@ struct ContentView: View {
                     }
                 }
                 .padding()
-    //            .navigationTitle("Login")
                 .alert(isPresented: $showingAlert) {
                     Alert(title: Text("Authentication Error"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
                 }
