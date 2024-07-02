@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180279E32C33D0EE009EBC32 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180279E22C33D0EE009EBC32 /* SplashView.swift */; };
+		180279E52C33E1AC009EBC32 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180279E42C33E1AC009EBC32 /* ImagePicker.swift */; };
 		186786F82C32703D005022A3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186786F72C32703D005022A3 /* HomeView.swift */; };
 		18B3D59B2C31B51B008F9BF8 /* kwssipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B3D59A2C31B51B008F9BF8 /* kwssipApp.swift */; };
 		18B3D59D2C31B51B008F9BF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B3D59C2C31B51B008F9BF8 /* ContentView.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180279E22C33D0EE009EBC32 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		180279E42C33E1AC009EBC32 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		186786F72C32703D005022A3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		18B3D5972C31B51B008F9BF8 /* kwssip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kwssip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B3D59A2C31B51B008F9BF8 /* kwssipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kwssipApp.swift; sourceTree = "<group>"; };
@@ -101,6 +105,8 @@
 				18B3D59E2C31B51F008F9BF8 /* Assets.xcassets */,
 				18B3D5A02C31B51F008F9BF8 /* Preview Content */,
 				186786F72C32703D005022A3 /* HomeView.swift */,
+				180279E22C33D0EE009EBC32 /* SplashView.swift */,
+				180279E42C33E1AC009EBC32 /* ImagePicker.swift */,
 			);
 			path = kwssip;
 			sourceTree = "<group>";
@@ -261,6 +267,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				186786F82C32703D005022A3 /* HomeView.swift in Sources */,
+				180279E32C33D0EE009EBC32 /* SplashView.swift in Sources */,
+				180279E52C33E1AC009EBC32 /* ImagePicker.swift in Sources */,
 				18B3D59D2C31B51B008F9BF8 /* ContentView.swift in Sources */,
 				18B3D59B2C31B51B008F9BF8 /* kwssipApp.swift in Sources */,
 			);

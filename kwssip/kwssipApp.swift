@@ -11,7 +11,11 @@ import SwiftUI
 struct kwssipApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().onAppear(){
+                DispatchQueue.main.asyncAfter(deadline: .now()+2){
+                    
+                }
+            }.overlay(SplashView().opacity(1))
         }
     }
 }

@@ -9,7 +9,9 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var isSheetPresented = false
-
+    @State private var selectedImage: UIImage?
+    @State private var isImagePickerPresented: Bool = false
+    
     var body: some View {
         
         
@@ -24,20 +26,23 @@ struct HomeView: View {
             Spacer()
             VStack{
                 HStack{
-                    CardView()
-                    CardView()
+                    ImageCardView(selectedImage:selectedImage)
+                    ImageCardView(selectedImage:selectedImage)
                 }
                 HStack{
-                    CardView()
-                    CardView()
-                    CardView()
+                    ImageCardView(selectedImage:selectedImage)
+                    ImageCardView(selectedImage:selectedImage)
+                    ImageCardView(selectedImage:selectedImage)
                 }
             }.padding(28)
             
 //            Spacer()
             Button(action: {
                         // Action to perform when the button is pressed
-                        print("Button pressed")
+                
+                isImagePickerPresented=true
+                        //TODO
+                        clickPictures()
                     }) {
                         Text("Take Pictures of Work Site")
                             .padding()
@@ -87,9 +92,17 @@ struct HomeView: View {
                 .aspectRatio(contentMode: .fill)
                 .clipped().opacity(0.1)
             
-        )
+        ).sheet(isPresented: $isImagePickerPresented) {
+            ImagePicker(selectedImage: $selectedImage, isPresented: $isImagePickerPresented)
+        }
         
         
+    }
+    
+    func clickPictures(){
+        isImagePickerPresented = true
+        print("isImagePickerPresented \(isImagePickerPresented)")
+
     }
 }
 
@@ -120,12 +133,12 @@ extension Color {
     }
 }
 
-struct CardView: View {
+struct ImageCardView: View {
+    var selectedImage: UIImage?
+    
     var body: some View {
         VStack {
-//            Text("Card")
-//                .font(.headline)
-//                .foregroundColor(.black)
+            Image(systemName: "photo")
         }
         .frame(width: 100, height: 100)
         .background(Color(white: 0.94)) // equivalent to #f0f0f0
@@ -184,8 +197,10 @@ struct BottomSheetView: View {
             Spacer()
             
             Button(action: {
-                        // Action to perform when the button is pressed
+                        // Action to perform when the button pressed
+
                         print("Button pressed")
+                
                     }) {
                         Text("Upload")
                             .padding()
@@ -195,12 +210,8 @@ struct BottomSheetView: View {
                     }
             Spacer()
         }.padding(18)
-        
-//        .frame(maxHeight: .infinity)
         .background(Color(hex:"#3EB3E0"))
-//        .frame(height:300)
-//        .cornerRadius(28)
-//        .shadow(radius: 20)
+
     }
 }
 
