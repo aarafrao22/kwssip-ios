@@ -20,7 +20,7 @@ struct kwssipApp: App {
                     SplashView()
                         .opacity(1)
                         .onAppear {
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                                 withAnimation {
                                     showContentView = true
                                 }

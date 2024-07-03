@@ -19,22 +19,34 @@ struct ContentView: View {
             
             ZStack{
                 VStack {
-                    Image("kwssip")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 160.0, height: 160.0)
                     
+                    VStack(spacing:0){
+                        
+                        Image("blue")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 100.0, height: 100.0)
+                        
+                        Text("KWSSIP").bold().font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/).foregroundColor((Color(hex: "#43a5e4")))
+                        
+                        Text("Karachi Water and Sewerage Services \nImprovement Project")
+                            .font(.system(size: 9))
+                            .foregroundColor(Color(hex: "#43a5e4"))
+                            .multilineTextAlignment(.center)
+                         
+                    }.padding(.bottom,42)
+
                     TextField("Username", text: $emailAddress)
                         .padding()
                         .background(Color(.secondarySystemBackground))
                         .cornerRadius(28.0)
-                        .padding(.bottom, 20)
+                        .padding(.bottom, 8)
                     
                     SecureField("Password", text: $password)
                         .padding()
                         .background(Color(.secondarySystemBackground))
                         .cornerRadius(28.0)
-                        .padding(.bottom, 20)
+                        .padding(.bottom, 28)
                     
                     Button(action: {
                         authenticateUser(emailAddress: emailAddress, password: password)
@@ -43,8 +55,8 @@ struct ContentView: View {
                             .font(.headline)
                             .foregroundColor(.white)
                             .padding()
-                            .frame(width: 220, height: 60)
-                            .background(Color.blue)
+                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                            .background((Color(hex: "#43a5e4")))
                             .cornerRadius(28.0)
                     }
                 }

@@ -34,7 +34,7 @@ struct HomeView: View {
                 .foregroundColor(Color(hex: "#21637D")).bold()
             
             Text("Ahmed").font(.title)
-                .foregroundColor(Color(hex: "#3EB3E0")).bold()
+                .foregroundColor(Color(hex: "#43a5e4")).bold()
             
             Spacer()
             VStack(spacing:12){
