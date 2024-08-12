@@ -9,6 +9,8 @@ import SwiftUI
 
 struct BottomSheetView: View {
     @State private var name: String = ""
+    @State private var feedback: String = ""
+    @State private var phone: String = ""
     @State private var isAlertShowing: Bool = false
     
     var body: some View {
@@ -32,12 +34,27 @@ struct BottomSheetView: View {
                 .padding()
                 .foregroundColor(Color(.white)).bold()
             Spacer()
-            TextField("Enter your name", text: $name)
+            HStack{
+                TextField("Name", text: $name)
+                    .padding()
+                    .foregroundColor(Color(hex: "#ffffff"))
+                    .background(Color(hex: "#ffffff"))
+                    .cornerRadius(14)
+                
+                TextField("Phone", text:$phone)
+                    .padding()
+                    .foregroundColor(Color(hex: "#ffffff"))
+                    .background(Color(hex: "#ffffff"))
+                    .cornerRadius(14)
+            }
+
+            
+            TextField("Enter your Feedback", text: $feedback)
                 .padding()
                 .frame(height: 5 * 24)
                 .foregroundColor(Color(hex: "#ffffff"))
                 .background(Color(hex: "#ffffff"))
-                .cornerRadius(22)
+                .cornerRadius(14)
             
             Spacer()
             
@@ -72,3 +89,8 @@ struct BottomSheetView: View {
         
     }
 }
+
+#Preview {
+    BottomSheetView()
+}
+

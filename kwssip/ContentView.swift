@@ -14,7 +14,7 @@ struct ContentView: View {
     @State private var alertMessage: String = ""
     @State private var isLoggedIn: Bool = false
 
-    var body: some View {
+var body: some View {
         NavigationStack {
             
             ZStack{
